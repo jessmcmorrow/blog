@@ -1,0 +1,22 @@
+body {
+    font-family: Times;
+    background: pink;
+    color: yellow;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: url("http://cur.cursors-4u.net/nature/images9/nat826.gif"), auto;
+    /*        background-attachment: fixed;
+*/
+}
+#rob {
+    cursor: url("http://cur.cursors-4u.net/food/images7/foo625.png"), auto;
+}
+
+#image {
+  
+      cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+    }
