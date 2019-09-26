@@ -1,3 +1,27 @@
+var navElem = document.getElementsByTagName('nav')[0];
+var mainElem = document.getElementsByTagName('main')[0];
+var navListItems = Array.prototype.slice.call(navElem.getElementsByTagName('li'));
+var mainSections = Array.prototype.slice.call(mainElem.getElementsByTagName('section'));
+
+//init
+mainSections.forEach(function(y,i){
+    y.style.display = (i==0) ? "block" : "none";
+    navListItems[0].classList.add('active');
+})
+
+//click events
+navListItems.forEach(function(x,i){
+    x.onclick = function(){
+        navListItems.forEach(function(z,k){
+            if(navListItems.indexOf(x)==k) { 
+                z.classList.add('active')
+            }
+                else{z.classList.remove('active')}
+        })
+        mainSections.forEach(function(y,j){y.style.display = (navListItems.indexOf(x) == j ? "block" : "none")})
+    }
+})
+
 function changeImage() {
     var image = document.getElementById('image');
     if(image && image.style) {
@@ -6,7 +30,7 @@ function changeImage() {
     }
     if (document.getElementById("image").src == "https://www.jneomarvin.com/scrapbook/images/1G_PSD.jpg") 
     {
-        document.getElementById("image").src = "https://github.com/jessmcmorrow/blog/blob/master/tomBrushing.jpg?raw=true";
+        document.getElementById("image").src = "https://github.com/jessmcmorrow/blog/blob/master/photos/tomBrushing.jpg?raw=true";
     }
     else 
     {
