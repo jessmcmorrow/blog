@@ -15,6 +15,7 @@ navListItems.forEach(function(x,i){
         navListItems.forEach(function(z,k){
             if(navListItems.indexOf(x)==k) { 
                 z.classList.add('active')
+                myHeader.innerText = "i'm gonna balance out your mood son"
             }
                 else{z.classList.remove('active')}
         })
