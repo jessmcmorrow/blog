@@ -20,3 +20,47 @@ body {
   
       cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
     }
+
+svg {
+    animation: 2s linear infinite svg-animation;
+    max-width: 100px;
+    }
+      
+@keyframes svg-animation {
+    0% {
+          transform: rotateZ(0deg);
+    }
+    100% {
+          transform: rotateZ(360deg)
+        }
+      }
+      
+circle {
+        animation: 2.4s ease-in-out infinite both circle-animation;
+        display: block;
+        stroke: greenyellow;
+        stroke-linecap: round;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 280;
+        stroke-width: 8px;
+        transform-origin: 50% 50%;
+      }
+      
+@keyframes circle-animation {
+        0%,
+        25% {
+          stroke-dashoffset: 280;
+          transform: rotate(0);
+        }
+        
+        50%,
+        75% {
+          stroke-dashoffset: 75;
+          transform: rotate(45deg);
+        }
+        
+        100% {
+          stroke-dashoffset: 280;
+          transform: rotate(180deg);
+        }
+      }
