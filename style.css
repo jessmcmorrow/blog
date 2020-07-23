@@ -2,16 +2,28 @@ body {
     font-family: Times;
     background: pink;
     color: yellow;
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     overflow-y: scroll;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
     /*cursor: url("http://cur.cursors-4u.net/nature/images9/nat826.gif"), auto;
             background-attachment: fixed;
 */
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+} 
+
+.container img {
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+
 #rob {
     cursor: url("http://cur.cursors-4u.net/food/images7/foo625.png"), auto;
 }
