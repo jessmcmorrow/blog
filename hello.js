@@ -17,12 +17,20 @@ navListItems.forEach(function(x,i){
                 z.classList.add('active')
                 myHeader.innerText = "i'm gonna balance out your mood son"
             }
-                else{z.classList.remove('active')}
+                else{z.classList.remove('active')
+                    myHeader.innerText = "welcome to my blog"}
         })
         mainSections.forEach(function(y,j){y.style.display = (navListItems.indexOf(x) == j ? "block" : "none")})
     }
 })
 
+window.addEventListener("load", function() {
+    var f = document.getElementById('tagline');
+    setInterval(function() {
+        f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+    }, 1000);
+
+}, false);  
 
 function changeImage() {
     var image = document.getElementById('image');
@@ -43,13 +51,13 @@ function changeImage() {
 
 function changeGitImage() {
     
-    if (document.getElementById("gitImage").src == "https://github.com/jessmcmorrow/blog/blob/master/pinkTerminal.png?raw=true") 
+    if (document.getElementById("gitImage").src == "https://github.com/jessmcmorrow/blog/blob/master/photos/pinkTerminal.png?raw=true") 
     {
-        document.getElementById("gitImage").src = "https://github.com/jessmcmorrow/blog/blob/master/photos/keithAlexander.png";
+        document.getElementById("gitImage").src = "https://github.com/jessmcmorrow/blog/blob/master/photos/keithAlexander.png?raw=true";
     }
     else 
     {
-        document.getElementById("gitImage").src = "https://github.com/jessmcmorrow/blog/blob/master/pinkTerminal.png?raw=true";
+        document.getElementById("gitImage").src = "https://github.com/jessmcmorrow/blog/blob/master/photos/pinkTerminal.png?raw=true";
     }
     
 }
