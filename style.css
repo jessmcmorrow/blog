@@ -1,5 +1,6 @@
 body {
     font-family: Times;
+    /* background-image: url('photos/gemBackground.jpg'); */
     background: pink;
     color: yellow;
     cursor: url("https://cur.cursors-4u.net/people/peo-4/peo384.cur"), auto;
@@ -25,7 +26,9 @@ body {
   margin-bottom: 10px;
   vertical-align: middle;
 }
-
+#dictionary {
+  background-image: url('photos/dinner.jpg');
+}
 #rob {
     cursor: url("https://cur.cursors-4u.net/food/foo-7/foo625.cur"), auto;
 }
