@@ -224,7 +224,7 @@
                 </div>
             </div>
         </div>
-
+        
         <img id='image' src='photos/rickyTractor.jpg' alt='hi' onclick='changeImage()' width='600' height='400'>
         <iframe width="400" height="250" src="https://www.youtube.com/embed/c3YCPtW4YVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img id ='gitImage' img src='photos/pinkTerminal.png?raw=true' alt='hello you old git' onclick='changeGitImage()' width='600' height='400'>
@@ -295,7 +295,33 @@
         
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ovFVapCtMHo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <img src='photos/michaelMos.jpg' alt='LINUXRULZ' width='300' height='400'><br/>
+        <a href="mailto:yougotketchuponit@gmail.com? subject=MESSAGE FROM YOUR WEBSITE"> reach out to me through cyberspace </a>
 
+        <div class="contactContainer">
+            <form action="mail.php" method="POST">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your email..">
+          
+              <label for="strokes">Favourite Strokes Member</label>
+              <select id="strokes" name="strokes">
+                <option value="Julian">Julian</option>
+                <option value="Nikolai">Nikolai</option>
+                <option value="Fab">Fab</option>
+                <option value="Nick">Nick</option>
+                <option value="Albert">Albert</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="reach out to me thru cyberspace">
+          
+            </form>
+          </div>
 
         <br/><br/>
         <div class = "w3-container">
