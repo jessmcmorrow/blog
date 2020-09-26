@@ -1,43 +1,27 @@
 body {
     font-family: Times;
-    /* background-image: url('photos/gemBackground.jpg'); */
     background: pink;
     color: yellow;
     cursor: url("https://cur.cursors-4u.net/people/peo-4/peo384.cur"), auto;
-    /* overflow-x: hidden;
-    overflow-y: scroll;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
-    /*cursor: url("http://cur.cursors-4u.net/nature/images9/nat826.gif"), auto;
-            background-attachment: fixed;
-*/
 }
 
 .container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 20px 20px;
 } 
 
-.container img {
+ .container img {
   margin-right: 18px;
   margin-bottom: 10px;
+  margin-top: 10px;
   vertical-align: middle;
-}
-#dictionary {
-  background-image: url('photos/dinner.jpg');
-}
+} 
+
 #rob {
     cursor: url("https://cur.cursors-4u.net/food/foo-7/foo625.cur"), auto;
 }
-
-#image {
-  
-      cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
-    }
 
 svg {
     animation: 2s linear infinite svg-animation;
@@ -92,6 +76,7 @@ circle {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  left: 20px;
   background-color: black;
   color: white;
   padding-left: 20px;
