@@ -5,6 +5,11 @@ body {
     cursor: url("https://cur.cursors-4u.net/people/peo-4/peo384.cur"), auto;
 }
 
+.tody {
+    background: white;
+    color: pink;
+    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
+}
 .container {
   position: relative;
   display: flex;
