@@ -7,7 +7,9 @@ body {
 
 .tody {
     background: white;
+    font-family: Arial;
     color: pink;
+    color: purple;
     cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
 }
 .container {
